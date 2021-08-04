@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Tasks App</title>
+	<link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Tasks App</a>
+
+	      <form class="d-flex">
+	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+	        <button class="btn btn-outline-success" type="submit">Search</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container p-4">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="card">
+					<div class="card-body">
+						<form id="task-form">
+							<input type="hidden" id="taskId">
+							<div class="form-group">
+								<input type="text" id="name" placeholder="Task name" class="form-control">
+							</div>
+							<div class="form-group">
+								<textarea id="description" cols="30" rows="10" class="form-control" placeholder="Task Description"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary btn-block text-center">Save Task</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="card my-4" id="task-result">
+					<div class="card-body">
+						<ul id="container"></ul>
+					</div>
+				</div>
+				<table class="table table-bordered table-sm">
+					<thead>
+						<tr>
+							<td>Id</td>
+							<td>Name</td>
+							<td>Description</td>
+						</tr>
+					</thead>
+					<tbody id="tasks"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+</html>
