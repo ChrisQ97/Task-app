@@ -12,3 +12,4 @@ This is a webapp created for managing task (create, delete, edit)
 * The file task.sql contains the structure of the database, execute the script on your server.
 * Place the files on your web server
 * Run your webserver (apache / nginx)
+* Open on your web browser
